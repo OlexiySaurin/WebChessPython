@@ -4,6 +4,10 @@ import chess
 
 
 class ChessGame:
+    """
+    Chess game using chess logic from python-chess library and UI from pygame.
+    """
+
     pieces = {
         chess.Piece(chess.KING, chess.WHITE): pygame.image.load("pieces/white_king.png"),
         chess.Piece(chess.KING, chess.BLACK): pygame.image.load("pieces/black_king.png"),

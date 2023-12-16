@@ -6,7 +6,7 @@ import chessgame as game
 
 class ChessClient(game.ChessGame):
     """
-    Chess game client. Represents second (black) player, while host - first (white) player.
+    Chess game client. Represents second (black) player.
     """
 
     def __init__(self, width, host, port, flippy=False):
