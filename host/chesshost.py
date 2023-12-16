@@ -9,8 +9,8 @@ class ChessHost(game.ChessGame):
     Chess game host. Creates server and represents first (white) player.
     """
 
-    def __init__(self, width, host, port, color=chess.WHITE, flippy=False):
-        super().__init__(width, color, flippy)
+    def __init__(self, width, host, port):
+        super().__init__(width, chess.WHITE, False)
 
         # initialize server
         self.socket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)

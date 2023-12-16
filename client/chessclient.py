@@ -9,10 +9,10 @@ class ChessClient(game.ChessGame):
     Chess game client. Represents second (black) player.
     """
 
-    def __init__(self, width, host, port, flippy=False):
+    def __init__(self, width, host, port):
 
         # set game properties and ui
-        super().__init__(width, chess.BLACK, flippy)
+        super().__init__(width, chess.BLACK, False)
 
         # connect to server
         self.socket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
