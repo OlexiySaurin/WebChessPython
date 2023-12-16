@@ -5,18 +5,18 @@ import chess
 
 class ChessGame:
     pieces = {
-        chess.Piece(chess.KING, chess.WHITE): pygame.image.load("D:/Python/Projects/WebChess/pieces/white_king.png"),
-        chess.Piece(chess.KING, chess.BLACK): pygame.image.load("D:/Python/Projects/WebChess/pieces/black_king.png"),
-        chess.Piece(chess.QUEEN, chess.WHITE): pygame.image.load("D:/Python/Projects/WebChess/pieces/white_queen.png"),
-        chess.Piece(chess.QUEEN, chess.BLACK): pygame.image.load("D:/Python/Projects/WebChess/pieces/black_queen.png"),
-        chess.Piece(chess.ROOK, chess.WHITE): pygame.image.load("D:/Python/Projects/WebChess/pieces/white_rook.png"),
-        chess.Piece(chess.ROOK, chess.BLACK): pygame.image.load("D:/Python/Projects/WebChess/pieces/black_rook.png"),
-        chess.Piece(chess.BISHOP, chess.WHITE): pygame.image.load("D:/Python/Projects/WebChess/pieces/white_bishop.png"),
-        chess.Piece(chess.BISHOP, chess.BLACK): pygame.image.load("D:/Python/Projects/WebChess/pieces/black_bishop.png"),
-        chess.Piece(chess.KNIGHT, chess.WHITE): pygame.image.load("D:/Python/Projects/WebChess/pieces/white_knight.png"),
-        chess.Piece(chess.KNIGHT, chess.BLACK): pygame.image.load("D:/Python/Projects/WebChess/pieces/black_knight.png"),
-        chess.Piece(chess.PAWN, chess.WHITE): pygame.image.load("D:/Python/Projects/WebChess/pieces/white_pawn.png"),
-        chess.Piece(chess.PAWN, chess.BLACK): pygame.image.load("D:/Python/Projects/WebChess/pieces/black_pawn.png"),
+        chess.Piece(chess.KING, chess.WHITE): pygame.image.load("pieces/white_king.png"),
+        chess.Piece(chess.KING, chess.BLACK): pygame.image.load("pieces/black_king.png"),
+        chess.Piece(chess.QUEEN, chess.WHITE): pygame.image.load("pieces/white_queen.png"),
+        chess.Piece(chess.QUEEN, chess.BLACK): pygame.image.load("pieces/black_queen.png"),
+        chess.Piece(chess.ROOK, chess.WHITE): pygame.image.load("pieces/white_rook.png"),
+        chess.Piece(chess.ROOK, chess.BLACK): pygame.image.load("pieces/black_rook.png"),
+        chess.Piece(chess.BISHOP, chess.WHITE): pygame.image.load("pieces/white_bishop.png"),
+        chess.Piece(chess.BISHOP, chess.BLACK): pygame.image.load("pieces/black_bishop.png"),
+        chess.Piece(chess.KNIGHT, chess.WHITE): pygame.image.load("pieces/white_knight.png"),
+        chess.Piece(chess.KNIGHT, chess.BLACK): pygame.image.load("pieces/black_knight.png"),
+        chess.Piece(chess.PAWN, chess.WHITE): pygame.image.load("pieces/white_pawn.png"),
+        chess.Piece(chess.PAWN, chess.BLACK): pygame.image.load("pieces/black_pawn.png"),
     }
 
     def __resize_pieces(self):

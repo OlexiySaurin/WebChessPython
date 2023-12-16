@@ -1,17 +1,19 @@
 import socket
-import sys
 import threading
 import chess
-
-sys.path.append("D:/Python/Projects/WebChess")
-
 import chessgame as game
 
 
 class ChessClient(game.ChessGame):
+    """
+    Chess game client. Represents second (black) player, while host - first (white) player.
+    """
 
     def __init__(self, width, host, port, flippy=False):
+
+        # set game properties and ui
         super().__init__(width, chess.BLACK, flippy)
+
         # connect to server
         self.socket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
         self.socket.connect((host, port))

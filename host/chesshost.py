@@ -1,10 +1,6 @@
 import socket
-import sys
 import threading
 import chess
-
-sys.path.append("D:/Python/Projects/WebChess")
-
 import chessgame as game
 
 
@@ -16,6 +12,7 @@ class ChessHost(game.ChessGame):
         # initialize server
         self.socket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
         self.socket.bind((host, port))
+        print("Server started at: ", (host, port))
         self.second_player = None
         self.flipped = not self.color
 
@@ -46,4 +43,4 @@ class ChessHost(game.ChessGame):
 
 
 if __name__ == '__main__':
-    ChessHost(800, '127.0.0.1', 5000, chess.WHITE)
+    ChessHost(800, "127.0.0.1", 5000, chess.WHITE)
